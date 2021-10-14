@@ -13,18 +13,30 @@
         <h1>Ghibli Review App</h1>
         <img id="studio-logo" src="./images/ghibli-logo.png">
     </header>
-   
-    <select id="dropdown-menu"></select>
+    <main>
+        <select id="dropdown-menu"></select>
 
-    <section id="display-info"></section>
+        <section id="display-info" >
+            <h3 id="movie-title"></h3>
+            <p id="release-year"></p>
+            <p id="description"></p>
+        </section>
 
-    <form id="review-section">
-        <div>Your Review</div>
-        <input id="review-input" type="text">
-        <input type="submit" value="Submit Review"/>
-    </form>
+        <section id="review-section">
+            <form id="review-form">
+                <div>Your Review</div>
+                <input id="review-input" type="text">
+                <input type="submit" value="Submit Review"/>
+            </form>
+    
+            <ul id="review-history">
+                <li class="user-review"></li>
+            </ul>
 
-    <ul id="review-history"></ul>
+        </section>
+        
+    </main>
+    
 
 </body>
 </html>
