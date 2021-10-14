@@ -1,11 +1,14 @@
 body {
-    display: grid;
-    grid-template-areas: "header" "header" "header"
-                            "" ;
     background-color: lavender;
+    font-family: monospace;
 }
 
+
+
 header {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-template-rows: 1;
     width: 75%;
     background-color: skyblue;
 }
@@ -18,5 +21,6 @@ header h1 {
 
 #studio-logo {
     text-align: left;
-    height: auto;
+    height: 100px;
 }
+

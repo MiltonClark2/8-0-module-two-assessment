@@ -27,15 +27,36 @@ fetch("https://ghibliapi.herokuapp.com/films")
                 currentMovie.textContent = movie.title;
                 releaseYear.textContent = movie.release_date;
                 description.textContent = movie.description;
-            
             }
-            
-        }
+        };
     });
+//////////Adds event listener to drop down menu is changed displaying the movie info of selected movie///////
+   
+/////////Creating an event listener that creates a list item to the review history//////////////////////////
+    // let textInput = document.querySelector("#review-input");
+    // let button = document.querySelector("#submit-button");
+
+    // button.addEventListener("click", () => {
+    //     let list = document.querySelector("#review-history");
+    //     let li = document.createElement("li");
+    //     li.textContent = textInput.value;
+    //     list.append(li);
+    // });
 
 
 
 
 
 
+});
+
+
+let textInput = document.querySelector("#review-input");
+let button = document.querySelector("#submit-button");
+let list = document.querySelector("#review-list");
+
+button.addEventListener("click", () => {
+    let li = document.createElement("li");
+    li.textContent = textInput.value;
+    list.append(li);
 });

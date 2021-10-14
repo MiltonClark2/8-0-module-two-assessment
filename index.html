@@ -26,12 +26,13 @@
             <form id="review-form">
                 <div>Your Review</div>
                 <input id="review-input" type="text">
-                <input type="submit" value="Submit Review"/>
+                <input id="submit-button" type="submit" value="Submit Review"/>
             </form>
-    
-            <ul id="review-history">
-                <li class="user-review"></li>
-            </ul>
+            
+            <div id="review-history">
+                <ul id="review-list"></ul>
+            </div>
+            
 
         </section>
         
@@ -40,3 +41,20 @@
 
 </body>
 </html>
+
+
+<!-- 
+//STEP 4 <------------------ADD SELECTED CHARACTER'S NAME TO TEAM MEMBERS LIST ON BUTTON CLICK------------------------>
+
+    <!-- //use querySelector to select our unordered list and our "Add to Team" button
+    const membersUL = document.querySelector("#members");
+    let addButton = document.querySelector("#addButton");
+
+    //set and event listener on the "Add to Team" button. Every time it gets clicked,
+    //we create a new li, give it the textContent of our selectedCharacter's name, then append it
+    // to the unordered list, which is called "membersUL"
+    addButton.addEventListener("click", () => {
+      let newMember = document.createElement("li");
+      newMember.textContent = selectedCharacter.name;
+      membersUL.append(newMember);
+    }); --> 
