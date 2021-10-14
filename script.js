@@ -10,7 +10,7 @@ fetch("https://ghibliapi.herokuapp.com/films")
         dropDown.append(option);
     }
 //////////Loop through the movie list and create each one as an option in the dropdown menu
-
+    
 
 
 
